@@ -1,6 +1,4 @@
-/* src/App.css */
 
-/* Reset some basic styling */
 * {
   margin: 0;
   padding: 0;
@@ -102,7 +100,7 @@ button:hover {
     height: 500px;
   }
 }
-/* App.css */
+
 .info-window {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -128,14 +126,14 @@ button:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Add styling for the map container */
+
 .map-container {
   margin: 20px;
   border: 2px solid #ccc;
   border-radius: 8px;
 }
 
-/* Style the markers with hover effects */
+
 .marker {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;

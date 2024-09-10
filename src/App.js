@@ -1,4 +1,4 @@
-// src/App.js
+
 import React from 'react';
 import CampusMap from './components/CampusMap';
 import './App.css';
