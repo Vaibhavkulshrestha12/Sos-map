@@ -1,70 +1,94 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### LPU Campus Map
 
-## Available Scripts
+The LPU Campus Map application provides an interactive map of the LPU campus, visualizing key locations and incidents to enhance campus security awareness. This React application integrates with Google Maps to display various types of markers and polygons, including police stations, red zones, and recent crime locations.
 
-In the project directory, you can run:
+### Features
+- Interactive Map: Centralized map view of LPU campus with zoom and pan capabilities.
+- Police Stations: Custom markers indicate the locations of police stations across the campus.
+- Red Zones: Highlighted polygons represent high-risk areas or red zones.
+- Crime Incidents: Markers display recent crime incidents with details.
+- Info Windows: Clickable markers reveal detailed information about each location or incident.
 
-### `npm start`
+### Technologies Used
+- React: Frontend framework for building the user interface.
+- Google Maps API: Provides map functionalities and geospatial data.
+- @react-google-maps/api: Library for integrating Google Maps with React applications.
+- CSS: Custom styles for a polished and user-friendly interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To get a local copy up and running, follow these steps.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js 16.x or higher
+- npm (Node package manager)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation Steps
+**Clone the repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+git clone https://github.com/Vaibhavkulshrestha12/Sos-map.git
+cd sos-map
+```
+**Install dependencies**
 
-### `npm run eject`
+```bash
+npm install
+```
+**Set Up Environment Variables**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a .env file in the root directory and add your Google Maps API key:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```.env
+REACT_APP_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+```
+**Start the Development Server**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Folder Structure
+```bash
+/lpu-campus-map
+│
+├── /public
+│   ├── index.html
+│   └── /custom-icons
+│       └── police-icon.png
+│
+├── /src
+│   ├── /components
+│   │   └── CampusMap.js
+│   ├── App.css
+│   ├── App.js
+│   ├── index.css
+│   └── index.js
+│
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-## Learn More
+### What to expect
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Once the development server is running, open your browser and navigate to http://localhost:3000 to view the map. The map will display:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Police Stations: Markers indicating the locations of police stations.
+- Red Zones: Highlighted areas on the map to represent high-risk zones.
+- Crime Incidents: Markers showing recent crime incidents with details.
 
-### Code Splitting
+### API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is a frontend application and does not expose any backend API endpoints. The map data is dynamically loaded and managed within the frontend.
 
-### Analyzing the Bundle Size
+### Contributing
+Contributions are welcome! If you have suggestions or improvements, please fork the repository and submit a pull request. Ensure your changes adhere to the project's code style and include tests where applicable.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
