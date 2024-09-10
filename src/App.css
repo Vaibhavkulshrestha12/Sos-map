@@ -1,0 +1,146 @@
+/* src/App.css */
+
+/* Reset some basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+#map-container {
+  margin: 0 auto;
+  width: 90%;
+  height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd;
+  background-color: #fff;
+}
+
+.info-window h3 {
+  color: #ff5722;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.info-window p {
+  font-size: 1rem;
+  color: #757575;
+}
+
+.info-window a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.info-window a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #666;
+  background-color: #1a73e8;
+  padding: 10px 0;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+footer a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #map-container {
+    width: 95%;
+    height: 500px;
+  }
+}
+/* App.css */
+.info-window {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.info-window h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.info-window p {
+  margin: 5px 0;
+}
+
+.map-container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-container:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Add styling for the map container */
+.map-container {
+  margin: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Style the markers with hover effects */
+.marker {
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.marker:hover {
+  transform: scale(1.1);
+}
